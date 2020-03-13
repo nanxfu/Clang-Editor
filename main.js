@@ -16,7 +16,7 @@ var mainWindow = null;
          width: 1100,
          height:638,
          
-         frame:false
+        //  frame:false
      });
      mainWindow.loadFile('index.html');
      console.log(BW,electron);

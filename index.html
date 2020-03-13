@@ -6,7 +6,7 @@
     <title>Clang Editor</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/uikit.min.css">
-    <link href="https://cdn.bootcss.com/font-awesome/5.12.1/css/fontawesome.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.bootcss.com/font-awesome/5.12.1/css/fontawesome.min.css" rel="stylesheet"> -->
 </head>
 <body>
     <div class="Container  uk-height-viewport">
@@ -24,11 +24,14 @@
         <div id="RightBar" class="uk-position-right" style="width: calc(100% - 310px);">
             <header>
                 <span id= "title" class="uk-heading-large">HI!,MY ADMINISROT</span>
-                <div id="close" class="uk-position-right uk-text-center"></div>
+                <!-- <div id="close" class="uk-position-right uk-text-center"></div> -->
             
             </header>
 
-            <div id="infor" class="uk-heading-small"><span id="infor-stor">Storage</span></div>
+            <div id="infor" class="uk-heading-small uk-flex uk-width-1-1">
+                <span id="infor-stor">Storage</span>
+                <button class="uk-button uk-button-default uk-border-circle " id="additem">+</button>
+            </div>
             <div id="infor-bar" ></div>
             <div class="card uk-flex uk-flex-1">
                 <div class="card-left">
@@ -79,6 +82,7 @@
         <video src="Pine-Watt.mp4" autoplay muted loop  class="uk-width-1-1" style="z-index:-2;position: fixed;object-fit: fill;"></video>
         
     </div>
+    <!-- <script src="js/uikit-icons.min.js"></script> -->
     <script src="js/uikit.min.js"></script>
 </body>
 </html>

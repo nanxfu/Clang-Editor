@@ -68,9 +68,12 @@
     padding: 0px 0px 0px 0px;
 }
 .ItemBar:hover {
-    background-color: rgba(255,255,255,.60);
-    box-shadow: 0 0 4px 1px #fff;
+    background-color: #fff;
+    box-shadow: 0 0 5px #fff;
     cursor: pointer;
+}
+.ItemBar:hover  span{
+    color: black;
 }
 #Version {
     margin: 14px 0px 0px 0px;
@@ -101,7 +104,27 @@ header {
 #infor {
     margin-top: 3px 0px -10px 0px;
     padding: 0px 0px 0px 43px;
-    
+    justify-content: space-between;
+    align-items: center;
+}
+#additem {
+    margin: 0px 45px 0px 0px;
+    border: 2px #fff solid;
+    color: #fff;
+    font-size: 40px;
+    /* text-align: center; */
+    width: 40px;
+    height: 40px;
+    line-height: 6px;
+    padding: 0px 0px 5px 0px ;
+    transition: .35s;
+}
+#additem:hover {
+    background-color: #fff;
+    color: black;
+    box-shadow: 0px 0px 5px #fff;
+    /* text-shadow: 1px 1px 1px black; */
+    /* content: url("./plus-hov.png") !important; */
 }
 #infor #infor-stor {
     text-shadow: 0 0 5px rgba(0,0,0,.55);
@@ -176,4 +199,5 @@ header {
 .card-start button:hover {
     background-color: #fff;
     color: #000;
+    box-shadow: 0px 0px 5px #fff;
 }
