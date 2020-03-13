@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clang Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/uikit.min.css">
+    <link href="https://cdn.bootcss.com/font-awesome/5.12.1/css/fontawesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="Container  uk-height-viewport">
+        <div id="LeftBar" class="uk-flex uk-flex-column">
+            <div id="Gravatar" class="uk-border-circle " style="width: 185px;height: 185px;background-image: url('./3.png');"></div>
+            <div class="item uk-flex uk-flex-column uk-text-center">
+                <div id="ProgramNa"><span>Clang Editor</span></div>
+                <div class="ItemBar uk-flex"><img src="home.png" width=32px height=32px alt=""><span class="uk-text-center">首 &emsp;页</span></div>
+                <div class="ItemBar uk-flex"><img src="setting.png" width=32px height=40px alt=""><span class="uk-text-center">设 &emsp;置</span></div>
+                <div class="ItemBar uk-flex"><img src="about.png" width=32px height=32px alt=""><span class="uk-text-center">关 &emsp;于</span></div>
+                <div id="Version"><span>Version: 0.0.1 Alpha</span></div>
+            </div>
+        <div class="Leftcover"></div>
+        </div>
+        <div id="RightBar" class="uk-position-right" style="width: calc(100% - 310px);">
+            <header>
+                <span id= "title" class="uk-heading-large">HI!,MY ADMINISROT</span>
+                <div id="close" class="uk-position-right uk-text-center"></div>
+            
+            </header>
+
+            <div id="infor" class="uk-heading-small"><span id="infor-stor">Storage</span></div>
+            <div id="infor-bar" ></div>
+            <div class="card uk-flex uk-flex-1">
+                <div class="card-left">
+                    <div class="card-title "><span class="uk-heading-small">Item</span></div>
+                    <div class="card-path"><span>C://Admin/whatdir/xiabianyige</span></div>
+                </div>
+
+                <div class="card-right uk-flex uk-flex-column uk-flex-1 uk-text-right">
+                    <div class="card-edit"><img src="more.png" width=40px alt=""></div>
+                    <div class="card-byte"><span id="card-edit-text">9.9MB</span></div>
+                    <div class="card-start">
+                       <button class="uk-button uk-button-default uk-border-rounded ">启动</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card uk-flex uk-flex-1">
+                <div class="card-left">
+                    <div class="card-title "><span class="uk-heading-small">Item</span></div>
+                    <div class="card-path"><span>C://Admin/whatdir/xiabianyige</span></div>
+                </div>
+
+                <div class="card-right uk-flex uk-flex-column uk-flex-1 uk-text-right">
+                    <div class="card-edit"><img src="more.png" width=40px alt=""></div>
+                    <div class="card-byte"><span id="card-edit-text">9.9MB</span></div>
+                    <div class="card-start">
+                       <button class="uk-button uk-button-default uk-border-rounded">启动</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card uk-flex uk-flex-1">
+                <div class="card-left">
+                    <div class="card-title "><span class="uk-heading-small">Item</span></div>
+                    <div class="card-path"><span>C://Admin/whatdir/xiabianyige</span></div>
+                </div>
+
+                <div class="card-right uk-flex uk-flex-column uk-flex-1 uk-text-right">
+                    <div class="card-edit"><img src="more.png" width=40px alt=""></div>
+                    <div class="card-byte"><span id="card-edit-text">9.9MB</span></div>
+                    <div class="card-start">
+                       <button class="uk-button uk-button-default uk-border-rounded">启动</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="blurCover"></div>
+        <video src="Pine-Watt.mp4" autoplay muted loop  class="uk-width-1-1" style="z-index:-2;position: fixed;object-fit: fill;filter: blur(2px);"></video>
+        
+    </div>
+    <script src="js/uikit.min.js"></script>
+</body>
+</html>
