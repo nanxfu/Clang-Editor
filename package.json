@@ -1,18 +1,32 @@
 {
   "name": "clang-editor",
   "version": "0.0.1",
-  "description": "",
+  "description": "none",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "packager": "electron-packager ./ ClangEditor --platform=win32  --arch=x64 --electron-version=1.7.5 --out=../ --overwrite"
+    
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
-  "author": "",
+  "author": "nanxfu",
   "license": "ISC",
+  "repository": "github:nanxfu/Clang-Editor",
   "devDependencies": {
-    "electron-packager": "^9.1.0"
+    "electron":"8.1.1",
+    "electron-builder": "^22.4.1"
   },
-  "dependencies": {
-    "custom-electron-titlebar": "^3.2.2-hotfix62"
+  "build": {
+    "win": {
+      "icon": "icon.png",
+      "target": [
+        "nsis"
+      ]},
+    "appId": "nanx.fu"
+    
+
   }
+
+  
+
 }
