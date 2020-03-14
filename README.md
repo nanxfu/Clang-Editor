@@ -22,6 +22,6 @@ Q:**使用electron-builder生成安装文件时产生’status code 404错误‘
 > 
 > ELECTRON_MIRROR="https://npm.taobao.org/mirrors/electron/" ELECTRON_CUSTOM_DIR="8.1.1" npm install
 
-## ❗ 注释
+## ❗注释
 因开发初期没有良好的开发习惯（(\*/ω＼\*)），导致项目内文件特别乱，所以请忽略*\\.png|mp4文件。但也不要删除他们，等有时间会考虑整理项目结构
  
