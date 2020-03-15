@@ -30,90 +30,36 @@
 
             <div id="infor" class="uk-heading-small uk-flex uk-width-1-1">
                 <span id="infor-stor">Storage</span>
-                <button class="uk-button uk-button-default uk-border-circle " id="additem">+</button>
+                <button class="uk-button uk-button-default uk-border-circle " id="additem"  @click="addItem()">+</button>
             </div>
             <div id="infor-bar" ></div>
-            <div class="card uk-flex uk-flex-1">
-                <div class="card-left">
-                    <div class="card-title "><span class="uk-heading-small">Item</span></div>
-                    <div class="card-path"><span>C://Admin/whatdir/xiabianyige</span></div>
-                </div>
+            <!-- <card-item id v-bind:title="title" path byte></card-item> -->
 
+            <div class="card uk-flex uk-flex-1" v-for="(items,index) in carditems">
+                <div class="card-left">
+                    <div class="card-title "><span class="uk-heading-small">{{items.title}}</span></div>
+                    <div class="card-path"><span>{{items.path}}</span></div>
+                </div>
+                
                 <div class="card-right uk-flex uk-flex-column uk-flex-1 uk-text-right">
                     <div class="card-edit"><img src="more.png" width=40px alt=""></div>
-                    <div class="card-byte"><span id="card-edit-text">9.9MB</span></div>
+                    <div class="card-byte"><span id="card-edit-text">{{items.byte}}</span></div>
                     <div class="card-start">
-                       <button class="uk-button uk-button-default uk-border-rounded ">启动</button>
+                       <button class="uk-button uk-button-default uk-border-rounded " @click="start(index)">启动</button>
                     </div>
                 </div>
-            </div>
+            </div> 
 
-            <div class="card uk-flex uk-flex-1">
-                <div class="card-left">
-                    <div class="card-title "><span class="uk-heading-small">Item</span></div>
-                    <div class="card-path"><span>C://Admin/whatdir/xiabianyige</span></div>
-                </div>
 
-                <div class="card-right uk-flex uk-flex-column uk-flex-1 uk-text-right">
-                    <div class="card-edit"><img src="more.png" width=40px alt=""></div>
-                    <div class="card-byte"><span id="card-edit-text">9.9MB</span></div>
-                    <div class="card-start">
-                       <button class="uk-button uk-button-default uk-border-rounded">启动</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card uk-flex uk-flex-1">
-                <div class="card-left">
-                    <div class="card-title "><span class="uk-heading-small">Item</span></div>
-                    <div class="card-path"><span>C://Admin/whatdir/xiabianyige</span></div>
-                </div>
-
-                <div class="card-right uk-flex uk-flex-column uk-flex-1 uk-text-right">
-                    <div class="card-edit"><img src="more.png"  alt=""></div>
-                    <div class="card-byte"><span id="card-edit-text">9.9MB</span></div>
-                    <div class="card-start">
-                       <button class="uk-button uk-button-default uk-border-rounded">启动</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card uk-flex uk-flex-1">
-                <div class="card-left">
-                    <div class="card-title "><span class="uk-heading-small">Item</span></div>
-                    <div class="card-path"><span>C://Admin/whatdir/xiabianyige</span></div>
-                </div>
-
-                <div class="card-right uk-flex uk-flex-column uk-flex-1 uk-text-right">
-                    <div class="card-edit"><img src="more.png" width=40px alt=""></div>
-                    <div class="card-byte"><span id="card-edit-text">9.9MB</span></div>
-                    <div class="card-start">
-                       <button class="uk-button uk-button-default uk-border-rounded">启动</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card uk-flex uk-flex-1">
-                <div class="card-left">
-                    <div class="card-title "><span class="uk-heading-small">Item</span></div>
-                    <div class="card-path"><span>C://Admin/whatdir/xiabianyige</span></div>
-                </div>
-
-                <div class="card-right uk-flex uk-flex-column uk-flex-1 uk-text-right">
-                    <div class="card-edit"><img src="more.png" width=40px alt=""></div>
-                    <div class="card-byte"><span id="card-edit-text">9.9MB</span></div>
-                    <div class="card-start">
-                       <button class="uk-button uk-button-default uk-border-rounded">启动</button>
-                    </div>
-                </div>
-            </div>
         </div>
         <div id="blurCover"></div>
         <video src="Pine-Watt.mp4" autoplay muted loop  class="uk-width-1-1 uk-height-viewport" style="z-index:-2;position: fixed;object-fit: fill;"></video>
         
     </div>
     <script src="js/vue.js"></script>
-    <!-- <script src="js/uikit-icons.min.js"></script> -->
     <script src="js/uikit.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- <script src="js/uikit-icons.min.js"></script> -->
 </body>
 </html>
