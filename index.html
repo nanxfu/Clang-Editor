@@ -21,9 +21,9 @@
             </div>
         <div class="Leftcover"></div>
         </div>
-        <div id="RightBar" class="uk-position-right" style="width: calc(100% - 310px);">
+        <div id="RightBar" class="uk-position-right" style="width: calc(100% - 310px);" >
             <header>
-                <span id= "title" class="uk-heading-large">HI!,MY ADMINISROT</span>
+                <span id= "title" class="uk-heading-large" >HI!,MY ADMINISROT</span>
                 <!-- <div id="close" class="uk-position-right uk-text-center"></div> -->
             
             </header>
@@ -33,8 +33,7 @@
                 <button class="uk-button uk-button-default uk-border-circle " id="additem"  @click="addItem()">+</button>
             </div>
             <div id="infor-bar" ></div>
-            <!-- <card-item id v-bind:title="title" path byte></card-item> -->
-
+            <!-- cardItem area -->
             <div class="card uk-flex uk-flex-1" v-for="(items,index) in carditems">
                 <div class="card-left">
                     <div class="card-title "><span class="uk-heading-small">{{items.title}}</span></div>
@@ -49,11 +48,23 @@
                     </div>
                 </div>
             </div> 
-
+            <div class="card uk-flex uk-flex-center uk-flex-middle" style="height: 55%;"v-if="Isempty">
+                <p style="font-size: 40px;color: #fff;text-shadow: 1px 1px 5px rgba(0,0,0,.25);">您还没有创建任何项目噢</p>
+            </div>
 
         </div>
         <div id="blurCover"></div>
-        <video src="Pine-Watt.mp4" autoplay muted loop  class="uk-width-1-1 uk-height-viewport" style="z-index:-2;position: fixed;object-fit: fill;"></video>
+        <video src="./Pine-Watt.mp4" autoplay  loop  class="uk-width-1-1 uk-height-viewport" style="z-index:-2;position: fixed;object-fit: fill;"></video>
+        <!-- 对话框 -->
+        <div id="modal-center" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+        
+                <p>提示内容</p>
+        
+            </div>
+        </div>
         
     </div>
     <script src="js/vue.js"></script>

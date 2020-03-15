@@ -6,14 +6,20 @@ var cardItem = {
 };
 var app = new Vue({
     el:'#RightBar',
-    data:{
-        carditems:[]
+    data: {
+        carditems:[],
+        Isempty:true,
     },
-    methods:{
-        addItem:function(){
+    methods: {
+        addItem: function(){
             this.carditems.push(cardItem);
+            if(this.carditems.length == 0){
+                this.Isempty = true;
+            }else {
+                this.Isempty = false;
+            }
         },
-        start:function(index){
+        start: function(index){
             alert(index);
         }
     }
