@@ -50,6 +50,7 @@
             </div> 
             <div class="card uk-flex uk-flex-center uk-flex-middle" style="height: 55%;"v-if="Isempty">
                 <p style="font-size: 40px;color: #fff;text-shadow: 1px 1px 5px rgba(0,0,0,.25);">您还没有创建任何项目噢</p>
+                {{IsemptyM}}
             </div>
 
         </div>
@@ -70,6 +71,10 @@
     <script src="js/vue.js"></script>
     <script src="js/uikit.min.js"></script>
     <script src="js/index.js"></script>
+    <script>
+        var fs= require('fs');
+        // console.log(fs);
+    </script>
 
     <!-- <script src="js/uikit-icons.min.js"></script> -->
 </body>

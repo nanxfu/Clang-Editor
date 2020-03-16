@@ -15,15 +15,21 @@ var mainWindow = null;
      mainWindow = new BW({
          width: 1100,
          height:638,
+         webPreferences: {
+            nodeIntegration: true
+      }
          
         //  frame:false
      });
      mainWindow.loadFile('index.html');
-     console.log(BW,electron);
+     mainWindow.webContents.openDevTools();
+    //  console.log(BW,electron);
+    // console.log(mainWindow);
      mainWindow.on('closed',()=>{
          mainWindow = null;
      })
  })
- 
+//  mainWindow.webContents.openDevTools();
+ console.log(mainWindow);
  Menu.setApplicationMenu(null);
  

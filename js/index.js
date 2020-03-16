@@ -11,16 +11,24 @@ var app = new Vue({
         Isempty:true,
     },
     methods: {
-        addItem: function(){
+        addItem(){
             this.carditems.push(cardItem);
+            
+        },
+        start(index){
+            alert(index);
+        }
+    },
+    computed:{
+        IsemptyM(){
             if(this.carditems.length == 0){
                 this.Isempty = true;
             }else {
                 this.Isempty = false;
             }
-        },
-        start: function(index){
-            alert(index);
+            return  this.Isempty;
         }
     }
 })
+
+//处理拖放事件
