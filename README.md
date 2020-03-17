@@ -43,5 +43,5 @@ Q:**使用electron-builder生成安装文件时产生’status code 404错误‘
 ## ❗注释
   因开发初期没有良好的开发习惯（(\*/ω＼\*)），导致项目内文件特别乱，所以请忽略*\\.png|mp4文件。但也不要删除他们，等有时间会考虑整理项目结构
 
-  **目前在Github上为public仓库，一段时间后（开发人数足够）将改为private仓库。参加项目维护得阔以发送邮箱admin@nanxfu.cn或提issues**
+  **参加项目维护得阔以发送邮箱admin@nanxfu.cn或提issues**
  
